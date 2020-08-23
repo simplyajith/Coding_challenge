@@ -53,7 +53,7 @@ python -m robot --variable BASE_URL:https://jsonplaceholder.typicode.com -d resu
 Clone the repo and go to Coding_challenge directory
 ```
 git clone https://github.com/simplyajith/Coding_challenge.git
-cd Coding_challenge/
+cd Coding_challenge/api_testing
 ```
 
 Build the docker file
