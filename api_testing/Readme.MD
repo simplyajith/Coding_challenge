@@ -63,7 +63,7 @@ docker build -t apitest .
 Set present working directory as environment variable PWD
 In Mac OS:
 ```
-Export PWD=“<present working directory>”
+export PWD=“<present working directory>”
 ex: export PWD="/Users/ajith/Coding_challenge/api_testing"
 ```
 In windows:
