@@ -24,8 +24,7 @@ post request for
 
 #    resource_url, data -two arguments for post requests
 #    resource_url - url of the resource where we are posting . Ex: /api/token
-#    data - is the data of post requests, generally a dictionary.
-#    gps_srm uses srm session id with gps password, hence session is srm session and header is ${header_common_gps}
+#    data - is the data of post requests
 
     [Arguments]  ${site}  ${resource_url}  ${data}=None
     log to console  ${resource_url}
@@ -34,7 +33,7 @@ post request for
 
 put request for
 
-#    resource_url, data -two arguments for putt  requests
+#    resource_url, data -two arguments for put  requests
 #    resource_url - url of the resource where we are posting . Ex: /api/token
 #    data - is the data of post requests, generally a dictionary.
 
@@ -46,8 +45,6 @@ put request for
 patch request for
 
 #    resource_url, data -two arguments for patch requests
-#    resource_url - url of the resource where we are posting . Ex: /api/token
-#    data - is the data of post requests, generally a dictionary.
 
     [Arguments]  ${site}  ${resource_url}  ${data}
     log to console  ${resource_url}
@@ -59,4 +56,3 @@ delete request for
     log to console  ${resource_url}
     ${response}=  run keyword if  "${site}" == "placeholder"  delete request  ${Login.session}  ${resource_url}  data=${data}  headers=${HEADER_COMMON}
     [Return]  ${response}
-
