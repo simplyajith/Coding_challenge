@@ -1,6 +1,6 @@
-# Project Title
+# API testing using Python-Robot framework
 
-API testing 
+API testing of web application [jsonplaceholder](https://jsonplaceholder.typicode.com)
 
 ## Getting Started
 
