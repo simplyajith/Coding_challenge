@@ -1,0 +1,4 @@
+posts:
+  valid_post_url: /posts/
+  invalid_post_url: /invalidposts
+

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  robot-runner:
+    container_name: robot-runner
+    image: ppodgorsek/robot-framework:latest
+    volumes:
+      - ./tests:/opt/robotframework/tests
+      - ./schema:/opt/robotframework/schema
+      - ./resource:/opt/robotframework/resource
+      - ./keyword:/opt/robotframework/keyword
+      - ./config:/opt/robotframework/config
+    environment:
+      PYTHONWARNINGS: "ignore:Unverified HTTPS request"
+    command: sudo -H pip3 install jsonschema
