@@ -14,7 +14,9 @@ What things you need to install the software and how to install them
 git
 python3
 python3 in system path
-pip3
+pip3 - 
+docker - https://docs.docker.com/engine/install/
+docker-compose- https://docs.docker.com/compose/install/
 ```
 
 ### Installation
