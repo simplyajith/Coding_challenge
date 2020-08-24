@@ -15,8 +15,8 @@ git
 python3
 python3 in system path
 pip3
-docker - https://docs.docker.com/engine/install/
-docker-compose- https://docs.docker.com/compose/install/
+docker [https://docs.docker.com/engine/install/]
+docker-compose [https://docs.docker.com/compose/install/]
 ```
 
 ### Installation
