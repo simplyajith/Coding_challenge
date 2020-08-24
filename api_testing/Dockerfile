@@ -21,3 +21,4 @@ RUN mkdir /schema
 RUN mkdir /tests
 
 ENTRYPOINT ["robot"]
+#CMD robot  --variable BASE_URL:https://jsonplaceholder.typicode.com -d results --loglevel DEBUG -i smoke tests
