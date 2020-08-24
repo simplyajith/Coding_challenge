@@ -56,26 +56,10 @@ git clone https://github.com/simplyajith/Coding_challenge.git
 cd Coding_challenge/api_testing
 ```
 
-Build the docker file
+Run the docker compose file
 ```
-docker build -t apitest .
+docker-compose up  --build
 ```
-Set present working directory as environment variable PWD
-In Mac OS:
-```
-export PWD=“<present working directory>”
-ex: export PWD="/Users/ajith/Coding_challenge/api_testing"
-```
-In windows:
-```
-set  PWD=“<present working directory>”
-ex:set   PWD=“D:/Coding_challenge/api_testing”
-```
-Running tests in docker
-```
-docker run -v $PWD/tests:/tests -v $PWD/schema:/schema -v $PWD/results:/results -v $PWD/resource:/resource -v $PWD/keyword:/keyword -v $PWD/config:/config -e ROBOT_OPTIONS="--loglevel DEBUG --variable BASE_URL:https://jsonplaceholder.typicode.com" apitest --outputdir /results /tests
-```
-
 
 ## Test results
 HTML output will be present in the results folder.
