@@ -22,6 +22,19 @@ docker-compose (https://docs.docker.com/compose/install/)
 
 ### Installation
 
+##Docker
+
+Clone the repo and go to Coding_challenge directory
+```
+git clone https://github.com/simplyajith/Coding_challenge.git
+cd Coding_challenge/api_testing
+```
+
+Run the docker compose file
+```
+docker-compose up  --build
+```
+
 ##Mac OS 
 ```
 git clone https://github.com/simplyajith/Coding_challenge.git
@@ -51,18 +64,6 @@ pip install -r requirements.txt
 python -m robot --variable BASE_URL:https://jsonplaceholder.typicode.com -d results/smoke --loglevel DEBUG -i smoke tests
 ```
 
-##Docker
-
-Clone the repo and go to Coding_challenge directory
-```
-git clone https://github.com/simplyajith/Coding_challenge.git
-cd Coding_challenge/api_testing
-```
-
-Run the docker compose file
-```
-docker-compose up  --build
-```
 
 ## Test results
 HTML output will be present in the results folder.
